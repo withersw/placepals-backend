@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: placepals
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/placepalsDB
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    # Uncomment the line below if needed
+    # open-in-view: false
